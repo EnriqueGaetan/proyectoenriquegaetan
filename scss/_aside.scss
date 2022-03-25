@@ -1,0 +1,71 @@
+.aside1{
+    width: auto;
+    padding: 10px;
+    margin: 0 auto;
+    grid-area: aside1;
+    .ranking{
+        width: 100%;
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 2px $principal solid;
+        border-radius: 10px;
+        h2{
+            margin-bottom: 5px;
+            font-family: 'Lobster', cursive;
+            font-size: 1.5rem;
+            text-align: center;
+            background-color: $principal;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .noticiaRanking{
+            display: flex;
+            text-align: left;
+            align-items: center;
+            overflow: auto;
+            .numeroRanking{
+                width: 45px;
+                height: 45px;
+                margin-bottom: 5px;
+                border-radius: 10px;
+            }
+            .textoRanking{
+                padding-left: 7px;
+                font-size: 1rem;
+            }
+            &:hover{
+                font-weight: bold;
+                background-color: $principal-hover;
+                border: 2px $principal solid;
+                border-radius: 10px;
+                color: rgb(0, 0, 0);    
+            }
+        }
+    }
+}
+.aside2{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    grid-area: aside2;
+    .lanzamientos{
+        padding: 10px;
+        text-align: center;
+        background-color: whitesmoke;
+        border: 2px $principal solid;
+        border-radius: 10px;
+        h2{
+            margin-bottom: 5px;
+            font-family: 'Lobster', cursive;
+            font-size: 1.5rem;
+            background-color: rgb(255, 115, 0);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .reproductor{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+    }
+}

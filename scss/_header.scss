@@ -1,0 +1,55 @@
+header{
+    width: 100%;
+    height: 560px;
+    margin-bottom: 60px;
+    background-image: url(../imagenes/herobanner.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    .navbar{
+        width: 100%;
+        background-color: rgba(116, 116, 116, 0.445);
+        position: fixed;
+        box-shadow: 0 0 5px whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar-nav{
+            padding: 10px;
+            font-size: 18px;
+            color: antiquewhite;
+            .nav-link{
+                color: whitesmoke;
+                text-transform: uppercase;
+                &:hover{
+                    font-weight: bold;
+                    background-color: $principal;
+                    color: whitesmoke;
+                    box-shadow: 0 0 5px $principal;
+                }
+            }
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        .img-fluid{
+            width: 480px;
+            height: 480px;
+            margin-top: 58px;
+        }
+    }
+    .textologo{
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Lobster', cursive;
+        color: rgb(207, 207, 207);
+        font-size: 2rem;
+    }
+    .separador{
+        font-size: 2.5rem;
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        background-color: $principal;
+    }
+}

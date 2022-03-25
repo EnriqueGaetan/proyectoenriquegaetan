@@ -7,19 +7,6 @@ body{
     background-color: rgb(218, 218, 218);
     font-family: "open sans";
 }
-/**********GRID INDEX********/
-.contenedorGridIndex{
-    width: 100%;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "header header header"
-    "main main aside1"
-    "main main aside2"
-    "footer footer footer";
-}
 
 /*******ESTILOS HEADER********/
 .header{
@@ -80,115 +67,6 @@ body{
     font-family: 'Lobster', cursive;
     text-align: center;
     background-color: rgb(255, 115, 0);
-}
-/*******ESTILOS MAIN INDEX*******/
-main{
-    padding: 10px;
-    margin: 0 auto;
-    grid-area: main;
-}
-.novedades{
-    padding: 15px 60px;
-}
-.noticias{
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: whitesmoke;
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: wrap;
-}
-.imgNoticias{
-    width: 450px;
-    height: 300px;
-    border-radius: 10px;
-}
-.textos{
-    margin: 15px;
-    padding: 10px;
-}
-.textos h2{
-    text-align: center;
-    font-weight: bold;
-}
-.noticias:hover{
-    background-color: rgb(253, 147, 60);
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-}
-/******ESTILOS ASIDE RANKING********/
-.aside1{
-    width: auto;
-    padding: 10px;
-    margin: 0 auto;
-    grid-area: aside1;
-}
-.ranking{
-    width: 100%;
-    padding: 10px;
-    background-color: whitesmoke;
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-}
-.aside1 h2{
-    margin-bottom: 5px;
-    font-family: 'Lobster', cursive;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: rgb(255, 115, 0);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.noticiaRanking{
-    display: flex;
-    text-align: left;
-    align-items: center;
-    overflow: auto;
-}
-.tituloRanking{
-    padding-left: 7px;
-    font-size: 1rem;
-}
-.numeroRanking{
-    width: 45px;
-    height: 45px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-}
-.noticiaRanking:hover{
-    background-color: rgb(253, 147, 60);
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);    
-}
-/******ESTILOS ASIDE LANZAMIENTOS*******/
-.aside2{
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
-    grid-area: aside2;
-}
-.lanzamientos{
-    padding: 10px;
-    text-align: center;
-    background-color: whitesmoke;
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-}
-.lanzamientos h2{
-    margin-bottom: 5px;
-    font-family: 'Lobster', cursive;
-    font-size: 1.5rem;
-    background-color: rgb(255, 115, 0);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.reproductor{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
 }
 /***********ESTILOS FOOTER*********/
 footer{
