@@ -151,7 +151,7 @@ main {
   font-size: 2rem;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   grid-area: footer; }
   .footer .logoFooter {
     width: 150px;
@@ -173,4 +173,6 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "main main aside1" "main main aside2" "footer footer footer"; }
+  grid-template-areas: "main main aside1"
+ "main main aside2"
+ "footer footer footer"; }
