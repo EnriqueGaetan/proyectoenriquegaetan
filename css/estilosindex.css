@@ -21,7 +21,8 @@ header {
     box-shadow: 0 0 5px whitesmoke;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    z-index: 100; }
     header .navbar .navbar-nav {
       padding: 10px;
       font-size: 18px;
