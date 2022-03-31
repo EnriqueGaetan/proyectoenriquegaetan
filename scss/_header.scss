@@ -13,6 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
     .navbar-nav {
       padding: 10px;
       font-size: 18px;
