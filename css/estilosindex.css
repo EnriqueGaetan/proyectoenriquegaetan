@@ -1,3 +1,4 @@
+/*Variables redes*/
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +22,7 @@ header {
     box-shadow: 0 0 5px whitesmoke;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 100; }
+    align-items: center; }
     header .navbar .navbar-nav {
       padding: 10px;
       font-size: 18px;
@@ -46,12 +46,12 @@ header {
     margin-top: -40px;
     display: flex;
     justify-content: center;
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
     color: #cfcfcf;
     font-size: 2rem; }
   header .separador {
     font-size: 2.5rem;
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
     text-align: center;
     background-color: #ff7300; }
 
@@ -83,49 +83,48 @@ main {
         text-align: center;
         font-weight: bold; }
 
-.aside1 {
-  width: auto;
+.aside, .aside1, .aside2 {
+  width: 100%;
   padding: 10px;
-  margin: 0 auto;
-  grid-area: aside1; }
-  .aside1 .ranking {
-    width: 100%;
+  margin: 0 auto; }
+  .aside .cuerpoAside, .aside1 .cuerpoAside, .aside2 .cuerpoAside {
     padding: 10px;
+    text-align: center;
     background-color: whitesmoke;
     border: 2px #ff7300 solid;
     border-radius: 10px; }
-    .aside1 .ranking h2 {
+  .aside h2, .aside1 h2, .aside2 h2 {
+    margin-bottom: 5px;
+    font-family: "Lobster", cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #ff7300;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+
+.aside1 {
+  grid-area: aside1; }
+  .aside1 .noticiaRanking {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    overflow: auto; }
+    .aside1 .noticiaRanking .numeroRanking {
+      width: 45px;
+      height: 45px;
       margin-bottom: 5px;
-      font-family: 'Lobster', cursive;
-      font-size: 1.5rem;
-      text-align: center;
-      background-color: #ff7300;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
-    .aside1 .ranking .noticiaRanking {
-      display: flex;
-      text-align: left;
-      align-items: center;
-      overflow: auto; }
-      .aside1 .ranking .noticiaRanking .numeroRanking {
-        width: 45px;
-        height: 45px;
-        margin-bottom: 5px;
-        border-radius: 10px; }
-      .aside1 .ranking .noticiaRanking .textoRanking {
-        padding-left: 7px;
-        font-size: 1rem; }
-      .aside1 .ranking .noticiaRanking:hover {
-        font-weight: bold;
-        background-color: #fd933c;
-        border: 2px #ff7300 solid;
-        border-radius: 10px;
-        color: black; }
+      border-radius: 10px; }
+    .aside1 .noticiaRanking .textoRanking {
+      padding-left: 7px;
+      font-size: 1rem; }
+    .aside1 .noticiaRanking:hover {
+      font-weight: bold;
+      background-color: #fd933c;
+      border: 2px #ff7300 solid;
+      border-radius: 10px;
+      color: black; }
 
 .aside2 {
-  width: 100%;
-  padding: 10px;
-  margin: 0 auto;
   grid-area: aside2; }
   .aside2 .lanzamientos {
     padding: 10px;
@@ -133,13 +132,6 @@ main {
     background-color: whitesmoke;
     border: 2px #ff7300 solid;
     border-radius: 10px; }
-    .aside2 .lanzamientos h2 {
-      margin-bottom: 5px;
-      font-family: 'Lobster', cursive;
-      font-size: 1.5rem;
-      background-color: #ff7300;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
     .aside2 .lanzamientos .reproductor {
       display: flex;
       justify-content: center;
@@ -148,11 +140,11 @@ main {
 .footer {
   background-color: #ff7300;
   padding-top: 30px;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 2rem;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   grid-area: footer; }
   .footer .logoFooter {
     width: 150px;
@@ -163,6 +155,16 @@ main {
     padding-top: 15px;
     display: flex;
     justify-content: space-around; }
+  .footer .bi-facebook:hover {
+    color: #4267b2; }
+  .footer .bi-instagram:hover {
+    color: #833ab4; }
+  .footer .bi-whatsapp:hover {
+    color: #25d366; }
+  .footer .bi-youtube:hover {
+    color: #ff0000; }
+  .footer .bi-envelope:hover {
+    color: #db4437; }
   .footer .newsletter {
     margin-right: 10px;
     padding-top: 15px;
@@ -174,6 +176,4 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "main main aside1"
- "main main aside2"
- "footer footer footer"; }
+  grid-template-areas: "main main aside1" "main main aside2" "footer footer footer"; }

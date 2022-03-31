@@ -1,12 +1,18 @@
-$principal:#ff7300;
+$principal: #ff7300;
 $principal-hover: #fd933c;
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(218, 218, 218);
-    font-family: "open sans";
-}
+/*Variables redes*/
+$fb: #4267b2;
+$insta: #833ab4;
+$wp: #25d366;
+$yt: #ff0000;
+$gm: #db4437;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(218, 218, 218);
+  font-family: "open sans";
+}

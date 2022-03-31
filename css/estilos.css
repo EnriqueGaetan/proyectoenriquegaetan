@@ -102,10 +102,10 @@ footer{
     color: rgb(37 211 102);
 }
 .bi-youtube:hover{
-    color: rgb(255 0 0);
+    color: rgb(255, 0, 0);
 }
 .bi-envelope:hover{
-    color: rgb(219 68 55);
+    color: rgb(219, 68, 55);
 }
 .newsletter{
     padding-top: 15px;
@@ -160,7 +160,7 @@ footer{
 }
 /******ESTILOS ASIDE RANKING********/
 .aside1{
-    width: auto;
+    width: 100%;
     padding: 10px;
     margin: 0 auto;
     grid-area: aside1;
