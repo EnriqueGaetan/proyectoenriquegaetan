@@ -4,6 +4,7 @@
 @import "aside";
 @import "footer";
 @import "mediaquery";
+
 /*****Estilos Index******/
 .contenedorGridIndex {
   width: 100%;
@@ -79,14 +80,14 @@
   }
 }
 /*****Estilos Sección Discos******/
+.artista{
+  width: 100%;
+  background-color: $principal;
+  margin-bottom: 15px;
+  text-align: center;
+}
 .row{
   --bs-gutter-x:0;
-  .artista{
-    width: 100%;
-    background-color: $principal;
-    margin-bottom: 15px;
-    text-align: center;
-  }
   .card{
     position: inherit;
     .btn-comprar{
