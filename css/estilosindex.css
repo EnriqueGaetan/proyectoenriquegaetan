@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variables redes*/
 * {
   margin: 0;
@@ -22,7 +23,8 @@ header {
     box-shadow: 0 0 5px whitesmoke;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    z-index: 100; }
     header .navbar .navbar-nav {
       padding: 10px;
       font-size: 18px;
@@ -170,6 +172,44 @@ main {
     padding-top: 15px;
     font-size: 1.2rem; }
 
+@media only screen and (max-width: 500px) {
+  /******MEDIA QUERIES INDEX HEADER*******/
+  .contenedorGridIndex {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "aside1"  "aside2" "footer"; }
+  .header {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    background-position: bottom; }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.568); }
+  .logo img {
+    width: 35%;
+    height: 35%;
+    margin-top: 75px; }
+  .textologo h1 {
+    font-size: 1.8rem;
+    margin-top: 30px; }
+  .separador {
+    font-size: 1.5rem;
+    margin: 0; }
+  /******MEDIA QUERIES INDEX MAIN*******/
+  .novedades {
+    padding: 15px 60px; }
+  .noticias {
+    flex-direction: column; }
+  /******MEDIA QUERIES INDEX MAIN*******/
+  footer {
+    flex-direction: column; }
+  .logoFooter {
+    margin: 0 auto; }
+  .contenedorRedes {
+    width: auto; }
+  .newsletter {
+    padding: 15px; } }
+
+/*****Estilos Index******/
 .contenedorGridIndex {
   width: 100%;
   margin: 0 auto;
@@ -177,3 +217,100 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "main main aside1" "main main aside2" "footer footer footer"; }
+
+/*****Estilos Sección Noticias******/
+.contenedorGridNoticias {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "mainNoticias mainNoticias aside1" "mainNoticias mainNoticias aside2" "footer footer footer"; }
+
+.mainNoticias {
+  margin: 10px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 2px #ff7300 solid;
+  border-radius: 10px;
+  display: flex;
+  grid-area: mainNoticias; }
+  .mainNoticias .cuerpoNoticias {
+    padding: 20px; }
+  .mainNoticias .notaTitulo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold; }
+  .mainNoticias .notaSubtitulo {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px; }
+  .mainNoticias .textoNoticia {
+    margin: 15px; }
+  .mainNoticias .videoNota {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+/*****Estilos Sección Shows y Eventos******/
+.card {
+  margin: 10px; }
+  .card .h5 card-title {
+    text-align: center; }
+  .card .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    position: inherit; }
+  .card .card-body-shows {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 1rem 1rem; }
+
+/*****Estilos Sección Discos******/
+.row {
+  --bs-gutter-x:0; }
+  .row .artista {
+    width: 100%;
+    background-color: #ff7300;
+    margin-bottom: 15px;
+    text-align: center; }
+  .row .card {
+    position: inherit; }
+    .row .card .btn-comprar {
+      color: #fff;
+      background-color: #ff7300;
+      border-color: #ff7300; }
+    .row .card .btn-comprar:hover {
+      background-color: whitesmoke;
+      border-color: #ff7300; }
+
+/******ESTILOS SECCION CONTACTO*******/
+.formulario {
+  width: 400px;
+  margin: 15px auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px #ff7300 solid;
+  border-radius: 10px; }
+  .formulario p {
+    font-weight: bold; }
+  .formulario input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 17px; }
+    .formulario input:hover {
+      border: 2px #ff7300 solid; }
+  .formulario .genero {
+    display: flex;
+    justify-content: start; }
+  .formulario .boton {
+    background: #dddddd; }
+    .formulario .boton:hover {
+      cursor: pointer;
+      background: #ff7300;
+      color: whitesmoke; }
+  .formulario textarea:hover {
+    border: 2px #ff7300 solid; }

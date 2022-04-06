@@ -114,96 +114,9 @@ footer{
 
 /*******ESTILOS SECCION NOTICIAS*******/
 
-/******GRID SECCION NOTICIAS**********/
-.contenedorGridNoticias{
-    width: 100%;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "header header header"
-    "mainNoticias mainNoticias aside1"
-    "mainNoticias mainNoticias aside2"
-    "footer footer footer";
-}
-.mainNoticias{
-    margin: 10px;
-    padding: 10px;
-    background-color: whitesmoke;
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-    display: flex;
-    grid-area: mainNoticias;
-}
-.cuerpoNoticias{
-    padding: 20px;    
-}
-.notaTitulo{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-}
-.notaSubtitulo{
-    font-size: 25px;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-.textoNoticia{
-    margin: 15px;
-}
-.videoNota{
-    padding: 15px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/******ESTILOS ASIDE RANKING********/
-.aside1{
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
-    grid-area: aside1;
-}
-.ranking{
-    width: 100%;
-    padding: 10px;
-    background-color: whitesmoke;
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-}
-.aside1 h2{
-    margin-bottom: 5px;
-    font-family: 'Lobster', cursive;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: rgb(255, 115, 0);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.noticiaRanking{
-    display: flex;
-    text-align: left;
-    align-items: center;
-    overflow: auto;
-}
-.tituloRanking{
-    padding-left: 7px;
-    font-size: 1rem;
-}
-.numeroRanking{
-    width: 45px;
-    height: 45px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-}
-.noticiaRanking:hover{
-    background-color: rgb(253, 147, 60);
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);    
-}
+
 /******ESTILOS ASIDE LANZAMIENTOS*******/
+
 .aside2{
     width: 100%;
     padding: 10px;
@@ -231,83 +144,9 @@ footer{
     margin-top: 15px;
 }
 /***** ESTILOS SECCION SHOWS Y EVENTOS******/
-.shows{
-    margin: 20px 20px;
-}
-.h5 card-title{
-    text-align: center;
-}
-.list-group-item{
-    display: flex;
-    justify-content: space-between;
-    position: inherit;
-}
-.card-body-shows{
-    display: flex;
-    justify-content: space-between;
-    flex: 1 1 auto;
-    padding: 1rem 1rem;
-}
-.card{
-    margin: 10px;
-}
 
 /*****ESTILOS SECCION DISCOS******/
-.card{
-    position: inherit;
-}
 
-.artista{
-    width: 100%;
-    background-color: rgb(255, 115, 0);
-    margin-bottom: 15px;
-    text-align: center;
-}
-.btn-comprar{
-    color: #fff;
-    background-color: rgb(255, 115, 0);
-    border-color: rgb(255, 115, 0);
-}
-.btn-comprar:hover{
-    background-color: whitesmoke;
-    border-color: rgb(255, 115, 0);
-}
-.row{
-    --bs-gutter-x:0;
-}
-/******ESTILOS SECCION CONTACTO*******/
-.formulario{
-    width: 400px;
-    margin: 15px auto;
-    padding: 20px;
-    background-color: white;
-    border: 2px rgb(255, 115, 0) solid;
-    border-radius: 10px;
-}
-input, textarea{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 5px;
-    font-size: 17px;
-}
-.genero{
-    display: flex;
-    justify-content: start;
-}
-.boton{
-    background: rgb(221, 221, 221);
-}
-.boton:hover{
-    cursor: pointer;
-    background: rgb(255, 115, 0);
-    color: whitesmoke;
-}
-input:hover{
-    border: 2px rgb(255, 115, 0) solid;
-}
-textarea:hover{
-    border: 2px rgb(255, 115, 0) solid;
-}
 
 @media only screen and (max-width: 500px){
     /******MEDIA QUERIES INDEX HEADER*******/
