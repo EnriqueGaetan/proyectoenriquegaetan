@@ -1,11 +1,12 @@
 @mixin redes($hover) {
   &:hover {
     color: $hover;
+    text-decoration: none;
   }
 }
 .footer {
   background-color: $principal;
-  padding-top: 30px;
+  padding: 30px;
   font-family: "Lobster", cursive;
   font-size: 2rem;
   text-align: center;
@@ -23,26 +24,37 @@
     padding-top: 15px;
     display: flex;
     justify-content: space-around;
+    text-decoration: none;
 
   }
     .bi-facebook {
       @include redes($fb);
+      text-decoration: none;
+      color: black;
     }
     .bi-instagram {
       @include redes($insta);
+      text-decoration: none;
+      color: black;
     }
     .bi-whatsapp {
       @include redes($wp);
+      text-decoration: none;
+      color: black;
     }
     .bi-youtube {
       @include redes($yt);
+      text-decoration: none;
+      color: black;
     }
     .bi-envelope {
       @include redes($gm);
+      text-decoration: none;
+      color: black;
     }
   .newsletter {
     margin-right: 10px;
     padding-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }

@@ -36,14 +36,12 @@
     .textoRanking {
       padding-left: 7px;
       font-size: 1rem;
-    }
+      }
     &:hover {
-      font-weight: bold;
       background-color: $principal-hover;
       border: 2px $principal solid;
       border-radius: 10px;
-      color: rgb(0, 0, 0);
-    }
+      }
   }
 }
 .aside2 {

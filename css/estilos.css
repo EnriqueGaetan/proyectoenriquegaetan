@@ -70,8 +70,9 @@ main {
     display: flex;
     flex-direction: wrap; }
     main .noticias:hover {
+      font-weight: bold;
       background-color: #fd933c;
-      border: 2px #ff7300 solid;
+      border: 4px #ff7300 solid;
       border-radius: 10px;
       color: black; }
     main .noticias .imgNoticias {
@@ -84,6 +85,9 @@ main {
       main .noticias .textos h2 {
         text-align: center;
         font-weight: bold; }
+      main .noticias .textos p {
+        padding-top: 30px;
+        text-align: center; }
 
 .aside, .aside1, .aside2 {
   width: 100%;
@@ -120,11 +124,9 @@ main {
       padding-left: 7px;
       font-size: 1rem; }
     .aside1 .noticiaRanking:hover {
-      font-weight: bold;
       background-color: #fd933c;
       border: 2px #ff7300 solid;
-      border-radius: 10px;
-      color: black; }
+      border-radius: 10px; }
 
 .aside2 {
   grid-area: aside2; }
@@ -141,7 +143,7 @@ main {
 
 .footer {
   background-color: #ff7300;
-  padding-top: 30px;
+  padding: 30px;
   font-family: "Lobster", cursive;
   font-size: 2rem;
   text-align: center;
@@ -156,21 +158,42 @@ main {
   .footer .contenedorIconos {
     padding-top: 15px;
     display: flex;
-    justify-content: space-around; }
-  .footer .bi-facebook:hover {
-    color: #4267b2; }
-  .footer .bi-instagram:hover {
-    color: #833ab4; }
-  .footer .bi-whatsapp:hover {
-    color: #25d366; }
-  .footer .bi-youtube:hover {
-    color: #ff0000; }
-  .footer .bi-envelope:hover {
-    color: #db4437; }
+    justify-content: space-around;
+    text-decoration: none; }
+  .footer .bi-facebook {
+    text-decoration: none;
+    color: black; }
+    .footer .bi-facebook:hover {
+      color: #4267b2;
+      text-decoration: none; }
+  .footer .bi-instagram {
+    text-decoration: none;
+    color: black; }
+    .footer .bi-instagram:hover {
+      color: #833ab4;
+      text-decoration: none; }
+  .footer .bi-whatsapp {
+    text-decoration: none;
+    color: black; }
+    .footer .bi-whatsapp:hover {
+      color: #25d366;
+      text-decoration: none; }
+  .footer .bi-youtube {
+    text-decoration: none;
+    color: black; }
+    .footer .bi-youtube:hover {
+      color: #ff0000;
+      text-decoration: none; }
+  .footer .bi-envelope {
+    text-decoration: none;
+    color: black; }
+    .footer .bi-envelope:hover {
+      color: #db4437;
+      text-decoration: none; }
   .footer .newsletter {
     margin-right: 10px;
     padding-top: 15px;
-    font-size: 1.2rem; }
+    font-size: 1.5rem; }
 
 @media only screen and (max-width: 500px) {
   /******MEDIA QUERIES INDEX HEADER*******/
@@ -242,6 +265,7 @@ main {
     font-size: 50px;
     font-weight: bold; }
   .mainNoticias .notaSubtitulo {
+    padding: 15px;
     font-size: 25px;
     font-weight: 300;
     margin-bottom: 10px; }
@@ -256,8 +280,9 @@ main {
 /*****Estilos Sección Shows y Eventos******/
 .card {
   margin: 10px; }
-  .card .h5 card-title {
-    text-align: center; }
+  .card .card-title {
+    text-align: center;
+    font-weight: bold; }
   .card .list-group-item {
     display: flex;
     justify-content: space-between;
@@ -267,6 +292,11 @@ main {
     justify-content: space-between;
     flex: 1 1 auto;
     padding: 1rem 1rem; }
+  .card:hover {
+    color: whitesmoke;
+    border: 2px #ff7300 solid;
+    background-color: #fd933c;
+    box-shadow: 0 5px 5px #ff7300; }
 
 /*****Estilos Sección Discos******/
 .artista {
@@ -282,10 +312,11 @@ main {
     .row .card .btn-comprar {
       color: #fff;
       background-color: #ff7300;
-      border-color: #ff7300; }
+      border-color: whitesmoke; }
     .row .card .btn-comprar:hover {
-      background-color: whitesmoke;
-      border-color: #ff7300; }
+      font-weight: bold;
+      color: black;
+      background-color: whitesmoke; }
 
 /******ESTILOS SECCION CONTACTO*******/
 .formulario {

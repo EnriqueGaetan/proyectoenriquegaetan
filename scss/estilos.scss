@@ -47,6 +47,7 @@
     font-weight: bold;
   }
   .notaSubtitulo{
+    padding: 15px;
     font-size: 25px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -64,8 +65,9 @@
 /*****Estilos Sección Shows y Eventos******/
 .card{
   margin: 10px;
-  .h5 card-title{
+  .card-title{
     text-align: center;
+    font-weight: bold;
   }
   .list-group-item{
     display: flex;
@@ -77,6 +79,12 @@
     justify-content: space-between;
     flex: 1 1 auto;
     padding: 1rem 1rem;
+  }
+  &:hover{
+    color: whitesmoke;
+    border: 2px $principal solid;
+    background-color: $principal-hover;
+    box-shadow: 0 5px 5px $principal;
   }
 }
 /*****Estilos Sección Discos******/
@@ -93,11 +101,13 @@
     .btn-comprar{
       color: #fff;
       background-color: $principal;
-      border-color: $principal;
+      border-color: whitesmoke;
     }
     .btn-comprar:hover{
+      font-weight: bold;
+      color: black;
       background-color: whitesmoke;
-      border-color: $principal;
+      
     }
   }
 }
