@@ -57,4 +57,11 @@
     padding-top: 15px;
     font-size: 1.5rem;
   }
+  .botonSuscribir{
+    &:hover{
+      background-color:$principal-hover;
+      color: whitesmoke;
+      border-radius: 2px;
+    }
+  }
 }

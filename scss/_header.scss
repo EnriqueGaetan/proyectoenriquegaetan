@@ -7,9 +7,9 @@ header {
   background-attachment: fixed;
   .navbar {
     width: 100%;
-    background-color: rgba(116, 116, 116, 0.445);
+    background-color: #4b4b4b88;
     position: fixed;
-    box-shadow: 0 0 5px whitesmoke;
+    box-shadow: 0 0 5px $principal;
     display: flex;
     justify-content: space-between;
     align-items: center;
